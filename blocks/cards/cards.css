@@ -63,13 +63,89 @@
 
 
 @media (min-width: 900px) {
-    .cards.scroll > ul > li {
-        width: calc(100%/3);
-    }
+  .cards.scroll > ul > li {
+    width: calc(100%/3);
+  }
 }
 
 @media (min-width: 1200px) {
-    .cards.scroll > ul > li {
-        width: calc(100%/4);
-    }
+  .cards.scroll > ul > li {
+    width: calc(100%/4);
+  }
+}
+
+.full-card > ul {
+  display: unset!important;
+}
+
+.full-card .cards-card-body {
+  position: relative;
+}
+.full-card .cards-card-body h2 {
+    position: absolute;
+    top: 8%;
+    left: calc(50% - 320px);
+    width: 640px;
+
+    color: white;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.full-card .cards-card-body p:nth-child(3) {
+    position: absolute;
+    top: 25%;
+    width: 35%;
+    left: 10%;
+    line-height: 1.7;
+    font-size: 16px;
+    color: white;
+}
+.full-card .cards-card-body p:nth-child(4) {
+    position: absolute;
+    top: 45%;
+    width: 35%;
+    left: 10%;
+    line-height: 1.7;
+    font-size: 16px;
+    color: white;
+}
+.full-card .cards-card-body .button-container a {
+    color: white;
+    background-color: #b1000e;
+    width: 35%;
+    top: 70%;
+    position: absolute;
+    left: 10%;
+}
+.full-card .cards-card-body .button-container a::after {
+    display: inline-block;
+    margin-left: 20px;
+    background-color: #b1000e;
+    width: 1em;
+    height: 1em;
+    content: "";
+    background-color: currentColor;
+    transition-duration: var(--transition-fast);
+    transition-property: transform background-color;
+    -webkit-mask-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 8.1 13.4"><polygon points="1.4,13.4 0,12 5.3,6.7 0,1.4 1.4,0 8.1,6.7 "/></svg>');
+    mask-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 8.1 13.4"><polygon points="1.4,13.4 0,12 5.3,6.7 0,1.4 1.4,0 8.1,6.7 "/></svg>');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+.full-card .cards-card-body picture img {
+    max-height: 765px;
+    margin-bottom: 100px;
+}
+.full-card ul li {
+    border: unset!important;
+}
+.full-card {
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
 }
