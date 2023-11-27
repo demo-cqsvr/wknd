@@ -357,9 +357,18 @@ main .section[data-section-status='initialized'] {
 }
 .article-list div{
   flex: 1;
+  margin: 5px;
+}
+
+.article-list div p {
+  line-height: 1.2;
+  font-family: fangsong;
+  font-weight: bold;
+  font-size: 15px;
 }
 .article-list div img{
   height: 180px;
   object-fit: fill;
   width: 100%;
+      margin: 5px;
 }
