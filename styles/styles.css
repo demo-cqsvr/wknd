@@ -355,3 +355,11 @@ main .section[data-section-status='initialized'] {
   display: flex;
   justify-content: space-around;
 }
+.article-list div{
+  flex: 1;
+}
+.article-list div img{
+  height: 180px;
+  object-fit: fill;
+  width: 100%;
+}
