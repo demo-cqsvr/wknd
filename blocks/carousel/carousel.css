@@ -71,7 +71,9 @@ main .carousel-wrapper {
 
 main .carousel-wrapper .carousel-buttons {
   text-align: center;
-  margin-top: 0;
+  
+  /* margin-top: 0; */
+  margin: 10px;
   position: absolute;
   display: flex;
   right: 0;
@@ -81,14 +83,14 @@ main .carousel-wrapper .carousel-buttons {
 
 main .carousel-buttons button {
   display: block;
-  height: 10px;
-  width: 10px;
+  height: 20px;
+  width: 20px;
   padding: 0;
-  margin: 5px;
-  border-radius: 5px;
+  margin: 10px;
+  border-radius: 10px;
   background-color: var(--highlight-background-color);
 }
 
 main .carousel-buttons button.selected {
-  background-color: var(--link-color);
+  background-color: var(--carousel-button-color);
 }
